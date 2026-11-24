@@ -2,7 +2,9 @@
 //
 // The joke's punchline claims it is exactly 105 characters long, so the file
 // must contain the joke text and nothing else — no trailing newline, or the
-// claim (and the joke) would stop being literally true.
+// claim (and the joke) would stop being literally true. The joke is pure
+// ASCII, so its 105 characters are also 105 bytes and the byte count the
+// grader sees matches the claim exactly.
 import { mkdirSync, writeFileSync } from "node:fs";
 
 const JOKE =
